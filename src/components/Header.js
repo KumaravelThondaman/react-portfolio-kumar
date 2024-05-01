@@ -5,36 +5,41 @@ export default function Header(){
     const headerList = [
         {
             id:1,
-            name: "Home"
+            name: "Home",
+            navPlace:"#"
         },
         {
             id:2,
-            name: "About"
+            name: "About",
+            navPlace:"#about"
         },
         {
             id:3,
-            name: "Projects"
+            name: "Projects",
+            navPlace:"#project"
         },
         {
             id:4,
-            name: "Resume"
+            name: "Resume",
+            navPlace:"#resume"
         },
         {
             id:5,
-            name: "Contact"
+            name: "Contact",
+            navPlace: "#contact"
         }
     ];
 
     const [toggleNav, setToggleNav] = useState(false);
     return(
-        <header className="flex justify-between px-10">
+        <header className="flex justify-between px-10" id="header">
             <div className="flex">
-                <div className="text-green-400">Kumaravel Thondaman</div>
+                <div className="text-green-300 text-4xl font-bold">Kumaravel Thondaman</div>
             </div>
             <div className="hidden md:block">
                 <ul className="flex flex-end gap-10">
                     {headerList.map((item) => (
-                        <li className="header-li" key={item.id}>{item.name}</li>
+                        <li className="header-li" key={item.id}><a href={item.navPlace}>{item.name}</a></li>
                     ))}
                 </ul>
             </div>
