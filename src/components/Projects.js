@@ -24,7 +24,7 @@ export default function Project() {
                 <div className="relative">
                 <img alt="" className="h-[300px] w-[300px]" src={Pf}></img>
                 <div className="project-desc">
-                    <p className="text-center py-5">ACRT is a comprehensive auditing control and reporting tool designed to streamline auditing processes for businesses across various industries. Whether it's financial audits, compliance checks, or quality assurance assessments, ACRT provides a robust platform to manage and execute audits efficiently.</p>
+                    <p className="text-center py-5">PathFactory is a B2B platform designed to revolutionize how businesses engage with their audience through personalized content experiences. Leveraging advanced AI and chat capabilities, PathFactory empowers users to create dynamic interactions tailored to individual queries and preferences.</p>
                 </div>
                 </div>
             </div>
