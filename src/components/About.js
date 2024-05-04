@@ -1,13 +1,16 @@
 import AboutImage from "../assets/images.jpg";
 import hero from "../assets/hero.png";
-
+import me from "../assets/1713061774338.jpg";
 export default function About() {
   return (
-    <section className="flex px-10 py-40 flex-col md:flex-row" id="about">
-      <div className="flex w-1/2">
-        <img alt="" src={hero} />
+    <section
+      className="flex px-10 py-40 flex-col md:flex-row space-x-80"
+      id="about"
+    >
+      <div className="flex w-1/2 w-[400px]">
+        <img alt="" src={me} />
       </div>
-      <div className="flex flex-col gap-3 w-full md:w-1/2">
+      <div className="flex flex-col gap-3 w-full md:w-1/2 p-y-10">
         <h1 className="text-4xl font-bold">
           About <span className="text-green-300">Me</span>
         </h1>
