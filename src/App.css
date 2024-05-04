@@ -15,7 +15,7 @@
 }
 
 .project-desc {
-  @apply absolute left-0 right-0 bottom-0 top-0 bg-green-300 opacity-0 duration-500 hover:opacity-100
+  @apply absolute left-0 right-0 bottom-0 top-0 bg-gray-300 opacity-0 duration-500 hover:opacity-100
 }
 
 .resume-btn {
@@ -24,4 +24,27 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Add this CSS to your stylesheet */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-text {
+  animation: fadeIn 5s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+}
+
+.icon-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
